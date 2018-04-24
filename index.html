@@ -2,26 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SimplCotton</title>
+	<title>SimplCoton</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="container">
-	<h1>SimplCotton</h1>
-	<p>"Le cotton c'est notre grande passion"</p>
+<body>
+	<h1>SimplCoton</h1>
+	<p>"Le coton c'est notre passion"</p>
 
-	<div class="vignette">
+	<div class="thumb">
 		<a href="#">
-			<img src="img/cotton.png" alt="Une fleur de cotton"/>
-			<p>Il est bon mon cotton</p>
+			<img onclick ="ClicDisplay('img/coton.png','Une fleur de coton');" src="img/coton.png" alt="Une fleur de coton"/>
+			<p>Il est bon mon coton</p>
 		</a>
 	</div>
-	<div class="vignette">
+	<div class="thumb">
 		<a href="#">
-			<img src="img/cotton.jpg" alt="Un champs de cotton"/>
-			<p>Un cotton de qualité</p>
+			<img onclick ="ClicDisplay('img/coton.jpg', 'Un champs de coton');" src="img/coton.jpg" alt="Un champs de coton"/>
+			<p>Ça va être coton</p>
 		</a>
 	</div>
-
+	
+	<a id="preview" class="hidden" onclick="ClicClear();" href="#"><img  src="" alt=""/><p>Salut</p></a>
 	<footer> <p id="copyright">&copy; Guillaume Groult</p> </footer>
+
+	<script src="preview.js"></script>
 </body>
 </html>
