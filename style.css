@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+  box-sizing: border-box;
+}
+
 body{
   background-color: #fdf8f2;
   font-family: Roboto, Arial, sans-sherif;
@@ -16,14 +20,16 @@ a{
   text-decoration: none;
 }
 
+header{ 
+  margin: auto; 
+  vertical-align: middle;
+}
+
 footer{
   background-color: #686868;
   color: white;
-  height: 100px;
   width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+  margin-top: 30px;
 }
 
 #copyright{
@@ -55,12 +61,27 @@ footer{
   display: none;
 }
 
+
+html, body, .full-height{
+  height: 100%;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.col{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .thumb{
     width: 200px;
     height: 200px;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 30px;
     margin: auto;
 }
 

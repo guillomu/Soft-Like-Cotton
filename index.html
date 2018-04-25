@@ -6,25 +6,45 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>SimplCoton</h1>
-	<p>"Le coton c'est notre passion"</p>
 
-	<div class="thumb">
-		<a href="#">
-			<img onclick ="ClicDisplay('img/coton.png','Une fleur de coton');" src="img/coton.png" alt="Une fleur de coton"/>
-			<p>Il est bon mon coton</p>
-		</a>
-	</div>
-	<div class="thumb">
-		<a href="#">
-			<img onclick ="ClicDisplay('img/coton.jpg', 'Un champs de coton');" src="img/coton.jpg" alt="Un champs de coton"/>
-			<p>Ça va être coton</p>
-		</a>
-	</div>
-	
-	<a id="preview" class="hidden" onclick="ClicClear();" href="#"><img  src="" alt=""/><p>Salut</p></a>
-	<footer> <p id="copyright">&copy; Guillaume Groult</p> </footer>
+	<div class="row full-height">
+		<div class="col">
+			<div class="row">	
+				<header>
+					<h1>SimplCoton</h1>
+					<p>"Le coton c'est notre passion"</p>
+				</header>
+			</div>
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<div class="thumb">
+						<a href="#">
+							<img onclick ="ClicDisplay('img/coton.png','Une fleur de coton');" src="img/coton.png" alt="Une fleur de coton"/>
+							<p>Il est bon mon coton</p>
+						</a>
+					</div>
+				</div>
+				<div class="col">	
+					<div class="thumb">
+						<a href="#">
+							<img onclick ="ClicDisplay('img/coton.jpg', 'Un champs de coton');" src="img/coton.jpg" alt="Un champs de coton"/>
+							<p>Ça va être coton</p>
+						</a>
+					</div></div>
+					<div class="col"></div>
+				</div>
+				<div class="row"></div>
 
-	<script src="preview.js"></script>
-</body>
-</html>
+				<div class="row">			
+					<footer> <p id="copyright">&copy; Guillaume Groult</p> </footer></div>
+				</div>
+			</div>
+
+
+			<a id="preview" class="hidden" onclick="ClicClear();" href="#"><img  src="" alt=""/><p>Salut</p></a>
+
+
+			<script src="preview.js"></script>
+		</body>
+		</html>
