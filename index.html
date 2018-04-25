@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
+	<!-- Mise en place d'une grid de 4 lignes dont la 2eme ligne possède 4 colonnes -->
 	<div class="row full-height">
 		<div class="col">
 			<div class="row">	
@@ -20,6 +20,7 @@
 				<div class="col">
 					<div class="thumb">
 						<a href="#">
+							<!-- On appelle la fonction ClicDisplay() lors d'un clique pour afficher l'image en plus grand au centre -->
 							<img onclick ="ClicDisplay('img/coton.png','Une fleur de coton');" src="img/coton.png" alt="Une fleur de coton"/>
 							<p>Il est bon mon coton</p>
 						</a>
@@ -31,20 +32,23 @@
 							<img onclick ="ClicDisplay('img/coton.jpg', 'Un champs de coton');" src="img/coton.jpg" alt="Un champs de coton"/>
 							<p>Ça va être coton</p>
 						</a>
-					</div></div>
-					<div class="col"></div>
+					</div>
 				</div>
-				<div class="row"></div>
-
-				<div class="row">			
-					<footer> <p id="copyright">&copy; Guillaume Groult</p> </footer></div>
-				</div>
+				<div class="col"></div>
 			</div>
+			<div class="row"></div>
+			<div class="row">			
+				<footer> 
+					<p id="copyright">&copy; Guillaume Groult</p> 
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<!-- Image de preview cachée par défault, on modifie ses attributs grace à la fonction ClicDisplay(), lors d'un clique on la fait disparaitre grâce à la fonction ClicClear() -->
+	<a id="preview" class="hidden" onclick="ClicClear();" href="#"><img  src="" alt=""/><p>Salut</p></a>
 
 
-			<a id="preview" class="hidden" onclick="ClicClear();" href="#"><img  src="" alt=""/><p>Salut</p></a>
-
-
-			<script src="preview.js"></script>
-		</body>
-		</html>
+	<script src="preview.js"></script>
+</body>
+</html>

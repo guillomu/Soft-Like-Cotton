@@ -37,6 +37,7 @@ footer{
   margin-right: 30px;
 }
 
+/* ----- Preview d'une image -----*/
 #preview{
   position: fixed;
   top: 20%;
@@ -61,7 +62,7 @@ footer{
   display: none;
 }
 
-
+/* ----- Grid ----- */
 html, body, .full-height{
   height: 100%;
   margin: auto;
@@ -79,6 +80,7 @@ html, body, .full-height{
   flex-direction: column;
 }
 
+/* ----- Vignettes ----- */
 .thumb{
     width: 200px;
     height: 200px;
